@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Calcular IMC</title>
+</head>
+
+<body class="app_root">
+    <section class="app_container">
+        <h1 class="app_titulo">Calcule o seu Indice de massa corporal (IMC)</h1>
+
+        <form id="formImc" class="form_container">
+            <div class="form_container_input">
+                <label class="form_titulo" for="peso">
+                    Informe seu peso em
+                    <span class="titulo_destaque">
+                        KGs
+                    </span>
+                    - (ex: 80)
+                </label>
+                <input class="form_input" id="peso" type="number" step="0.1">
+            </div>
+            <div class="form_container_input">
+                <label class="form_titulo" for="altura">
+                    Informe sua altura em 
+                    <span class="titulo_destaque">
+                        centímetros
+                    </span>
+                    - (ex: 173)
+                </label>
+                <input class="form_input" id="altura" type="number" step="0.1">
+            </div>
+
+            <button id="botaoCalcula" class="form_botao" type="submit">
+                Calcular
+            </button>
+        </form>
+
+        <div class="app_resultado">
+            <h2 class="app_resultado_titulo">
+                Seu IMC:
+            </h2>
+            <p class="app_resultado_resposta" id="resultadoImc">
+            </p>
+        </div>
+        <div class="app_resultado">
+            <h2 class="app_resultado_titulo" id="classificacao_titulo">
+                Seu indice e massa corporal é:
+            </h2>
+            <p class="app_resultado_resposta" id="classificacao_descricao">
+            </p>
+        </div>
+    </section>
+
+
+    <script src="./dist/Imc.js"></script>
+
+</body>
+
+</html>
